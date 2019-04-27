@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+    
+    <header>
+        
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Page Index</a></li>
+            <li><a href="php.html">Page PHP</a></li>
+            <li><a href="sql.html">Page SQL</a></li>
+        </ul> 
+    </nav>
+
+    <main>
+        <form>
+            <label for="nom">Nom</label><br>
+            <input type="text" name="nom" id="nom" required><br>
+            
+            <label for="prenom">Prenom</label><br>
+            <input type="text" name="prenom" id="prenom" required><br>
+            
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required><br>
+            
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" min="3" max="99"><br>
+            
+            <label for="tel">Telephone</label><br>
+            <input type="tel" name="tel" id="tel" maxlength="10"><br>
+            
+            <label for="sexe">Sexe</label>
+            <input type="radio" name="sexe" id="sexe" value="Homme">Homme
+            <input type="radio" name="sexe" id="sexe" value="femme">Femme<br>
+            
+            <label for="favcolor">Couleur préferée</label><br>
+            <input type="color" name="favcolor" value="#ff0000"><br>
+            
+            <label for="date">Date</label><br> 
+            <input type="date" name="date" id="date" required><br>
+
+            <label for="tech">Technologie</label><br>
+            <select name="tech" id="tech">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="sql">SQL</option>
+            </select><br><br>
+
+            <label for="question">Questions:</label><br>
+            <textarea name="question" id="question" cols="40" rows="10" required>Envoyer vos questions</textarea><br>
+
+            <input type="submit" name="valider" value="Soumettre">
+        </form>
+        
+
+    </main>
+
+    <section>
+            
+    </section>
+
+    <footer>
+        <p>Marques Barbosa Orquidea</p>
+        <ul>
+            <li>Adresse: 7 rue du 19 Mars 1962, 93430 Villetaneuse</li>
+            <li>Tel: 06.59.15.95.11</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
