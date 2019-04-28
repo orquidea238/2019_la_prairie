@@ -24,7 +24,8 @@ header p{
 
 /*-------NAV------ */
 nav{
-    background-color: #000533;
+    
+    background-color: Tomato;
     padding: 15px;
     
 }
@@ -40,12 +41,30 @@ nav ul li{
     list-style: none;
     padding-left: 100px;
 }
-nav ul li a{
-    text-decoration: none;
-    color: #FFF;
-    
+
+nav ul li .en-cours{
+    color: tomato;
+    background-color: #FFF;
 }
 
+nav ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a:active{
+    background-color: #04ADBF;
+}
+
+/* -------MAIN-------- */
+.container{
+    height: 300px;
+}
 
 /* -----------------PAGE PHP et SQL---------------------- */
 
@@ -56,14 +75,18 @@ main{
 }
 
 main .article1{
-    width: 80%;
-    background-color: #ffda79;
     padding: 40px;
     margin: auto;
     text-align: center;
 }
 main .article1 p{
-    color: #0A0E33;
+    color: #303030;
+    font-size: 1.5rem;
+}
+
+main .article1 p span{
+    color: tomato;
+    font-size: 2rem;
 }
 
 /* -------MAIN article2-------- */
@@ -102,7 +125,7 @@ main .article2 table tr td{
 
 main .article3{
     background-color: #FFF;
-    padding: 20px;
+    padding: 40px;
     border-bottom: 1px solid #000533;
 }
 
@@ -118,7 +141,7 @@ main .article3 ul{
 
 /* -------MAIN article4-------- */
 main .article4{
-    background-color: lightgrey;
+    background-color: #DCDCDC;
     padding: 30px;
 }
 
@@ -129,7 +152,7 @@ main .article4 h3{
 
 /* -------MAIN article5-------- */
 main .article5{
-    background-color: #000533;
+    background-color: tomato;
     text-align: center;
     margin-top: 30px;
 }
@@ -145,23 +168,73 @@ main .article5 progress{
 }
 
 /* -------ASIDE-------- */
+aside{
+    margin-bottom: 80px;
+}
+
 aside blockquote{
-    background-color: #F2913D;
-    width: 60%;
+    color: tomato;
+    width: 50%;
     margin: auto;
     padding: 50px;
     text-align: center;
-    border-radius: 10px;
+    font-size: 2rem;
+    border: 1px solid tomato;
 }
 
 
 /* -------FOOTER-------- */
 footer{
-    background-color: #04ADBF;
-    margin-top: 100px;
+    background-color:#787878;
     padding: 20px;
 }
 
 footer p, ul {
     color: #FFF;
 }
+
+
+/* --------------------Page Contact---------------------- */
+
+/* ------FROMULAIRE-------- */
+.contact{
+    background-color: #ffffcc;
+    padding-bottom: 100px;
+}
+
+.contact form{
+    width: 50%;
+    margin: auto;  
+}
+
+.contact form label{
+    color: #000533;
+    font-size: 1.5rem;
+}
+
+input[type=text], input[type=email], input[type=number],
+input[type=tel]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid tomato;
+  }
+
+  textarea{
+      width: 100%;
+      border: 1px solid tomato;
+  }
+
+  input[type=radio], input[type=date], input[type=color], select{
+      width: 20%;
+      border: 1px solid tomato;
+  }
+
+  input[type=submit]{
+      border: none;
+      background-color: #04ADBF;
+      padding: 10px;
+      color: #FFF;
+      cursor: pointer;
+  }

@@ -10,13 +10,14 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Page Index</a></li>
-            <li><a href="php.html">Page PHP</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="sql.html">Page SQL</a></li>
+            <li><a href="php.html">Page PHP</a></li>
+            <li><a class="en-cours" href="#">Contact</a></li>
         </ul> 
     </nav>
 
-    <main>
+    <main class="contact">
         <form>
             <label for="nom">Nom</label><br>
             <input type="text" name="nom" id="nom" required><br>
@@ -31,17 +32,17 @@
             <input type="number" name="age" id="age" min="3" max="99"><br>
             
             <label for="tel">Telephone</label><br>
-            <input type="tel" name="tel" id="tel" maxlength="10"><br>
+            <input type="tel" name="tel" id="tel" maxlength="10"><br><br>
             
             <label for="sexe">Sexe</label>
             <input type="radio" name="sexe" id="sexe" value="Homme">Homme
-            <input type="radio" name="sexe" id="sexe" value="femme">Femme<br>
+            <input type="radio" name="sexe" id="sexe" value="femme">Femme<br><br>
             
             <label for="favcolor">Couleur préferée</label><br>
-            <input type="color" name="favcolor" value="#ff0000"><br>
+            <input type="color" name="favcolor" value="#ff0000"><br><br>
             
             <label for="date">Date</label><br> 
-            <input type="date" name="date" id="date" required><br>
+            <input type="date" name="date" id="date" required><br><br>
 
             <label for="tech">Technologie</label><br>
             <select name="tech" id="tech">
@@ -60,10 +61,6 @@
         
 
     </main>
-
-    <section>
-            
-    </section>
 
     <footer>
         <p>Marques Barbosa Orquidea</p>
